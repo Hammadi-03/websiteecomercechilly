@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yellowbird</title>
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="icon" type="image/jpg" href="asset/src/img/Group 1.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fce201;
+      color: black;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      background-color: #fce201; 
+      border-bottom: 2px solid black;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-links, .nav-icons {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a, .nav-icons a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: font-family 0.3s ease;
+    }
+
+    .nav-links a:hover, .nav-icons a:hover {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+
+    .logo-container1 .navbar {
+      font-size: 2em;
+      font-weight: bold;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+    
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      border-bottom: 2px solid black;
+    }
+
+    .hero h1 {
+      font-size: 2em;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.4;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      background: white;
+      border: 3px solid black;
+      border-radius: 20px;
+      text-align: center;
+      width: 250px;
+      padding: 20px;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .product-card h3 {
+      margin-top: 15px;
+      font-size: 1.5em;
+    }
+
+    .shop-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 25px;
+      background: black;
+      color: white;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+    }
+
+    .shop-btn:hover {
+      background: #333;
+    }
+
+    footer {
+      padding: 30px;
+      background-color: #fce201;
+      border-top: 2px solid black;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .newsletter {
+      margin: 20px 0;
+    }
+
+    .newsletter input {
+      padding: 10px;
+      border: 2px solid black;
+      width: 200px;
+    }
+
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="SHOP.html">SHOP</a></li>
+      <li><a href="ABOUT.HTML">ABOUT</a></li>
+      <li><a href="index.html">HOME</a></li>
+    </ul>
+    <div class="logo-container1"></div>
+    <img src="asset/src/img/logo.png" alt="logo of yellow bird" style="width: 95px; height: auto;">
+
+    <ul class="nav-icons">
+      <li><a href="#">SEARCH</a></li>
+      <li><a href="#">LOG IN</a></li>
+      <li><a href="#">CART</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" onclick="hamburger()">
+            <i class="fa-solid fa-bars" style="color: #808080;"></i>
+        </div>
+        </div>
+        <div class="dropdown">
+            <div class="hamburger-links">
+                <a href="SHOP.html">SHOP</a>
+                <a href="ABOUT.HTML">ABOUT</a>
+                <a href="index.html">HOME</a>
+                <a href="#">LOG IN</a>
+                <div class="cancel" onclick="cancel()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+
+         <div class="SHOP" data-aos="fade-up" data-aos-duration="1000">
+        <h1>Shop All</h1>
+        <button>ALL</button> 
+        <button>CLASSIC</button>
+        <button>ORGANIC</button>
+        <button>SMALL BATCH</button>
+
+        <div class="product-grid">
+            <div class="product1">
+                <img src="" alt="">
+            </div>
+            <div class="product2"></div>
+            <div class="product3"></div>
+            <div class="product4"></div>
+            <div class="product5"></div>
+        </div>
+
+        
+
+
+
+
+  
