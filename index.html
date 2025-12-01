@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yellowbird | Premium Hot Sauce</title>
-  <meta name="description" content="Yellowbird - Delicious hot sauces with killer ingredients. For spice lovers and beginners alike.">
+  <title>About Us | Yellowbird Hot Sauce</title>
+  <meta name="description" content="Learn about Yellowbird's story, our passion for flavor, and our commitment to crafting the most delicious hot sauces.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
       --primary-yellow: #fce201;
       --primary-black: #000000;
       --primary-white: #ffffff;
+      --accent-red: #f20000;
       --hover-gray: #333333;
       --transition-speed: 0.3s;
       --border-radius: 20px;
@@ -102,94 +103,215 @@
       transform: scale(1.05);
     }
 
-    /* Hero Section */
-    .hero {
+    /* About Hero */
+    .about-hero {
+      padding: 6rem 2rem;
       text-align: center;
-      padding: 4rem 2rem;
-      border-bottom: 2px solid var(--primary-black);
       background: linear-gradient(135deg, var(--primary-yellow) 0%, #ffed4e 100%);
+      border-bottom: 2px solid var(--primary-black);
     }
 
-    .hero h1 {
+    .about-hero h1 {
       font-family: 'Playfair Display', 'Times New Roman', serif;
-      font-size: 2.5rem;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.3;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
       font-weight: 700;
+      letter-spacing: -1px;
     }
 
-    /* Products Section */
-    .products {
+    .about-hero .tagline {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: var(--hover-gray);
+      font-weight: 500;
+    }
+
+    /* Story Section */
+    .story-section {
       display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-      padding: 4rem 2rem;
-      flex-wrap: wrap;
+      align-items: center;
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 4rem;
     }
 
-    .product-card {
-      background: var(--primary-white);
-      border: 3px solid var(--primary-black);
-      border-radius: var(--border-radius);
-      text-align: center;
-      width: 280px;
-      padding: 2rem;
-      transition: all var(--transition-speed) ease;
-      box-shadow: var(--shadow);
+    .story-content {
+      flex: 1;
     }
 
-    .product-card:hover {
-      transform: translateY(-10px);
-      box-shadow: var(--shadow-hover);
-      border-color: var(--hover-gray);
-    }
-
-    .product-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: contain;
+    .story-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
       margin-bottom: 1.5rem;
+      color: var(--primary-black);
+    }
+
+    .story-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .story-image {
+      flex: 1;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-hover);
+      border: 3px solid var(--primary-black);
+    }
+
+    .story-image img {
+      width: 100%;
+      height: auto;
+      display: block;
       transition: transform var(--transition-speed) ease;
     }
 
-    .product-card:hover img {
+    .story-image:hover img {
       transform: scale(1.05);
     }
 
-    .product-card h3 {
-      margin-top: 1rem;
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: var(--primary-black);
-      font-family: 'Playfair Display', serif;
+    /* Values Section */
+    .values-section {
+      padding: 5rem 2rem;
+      background-color: var(--primary-white);
+      border-top: 2px solid var(--primary-black);
+      border-bottom: 2px solid var(--primary-black);
     }
 
-    /* Shop Button */
-    .shop-btn {
-      display: block;
-      margin: 3rem auto;
-      padding: 1rem 2.5rem;
+    .values-section h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .value-card {
+      background: var(--primary-yellow);
+      border: 3px solid var(--primary-black);
+      border-radius: var(--border-radius);
+      padding: 2.5rem;
+      text-align: center;
+      transition: all var(--transition-speed) ease;
+    }
+
+    .value-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .value-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .value-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Team Section */
+    .team-section {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .team-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .team-member {
+      text-align: center;
+    }
+
+    .member-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      border: 3px solid var(--primary-black);
+      overflow: hidden;
+      background-color: var(--primary-white);
+    }
+
+    .member-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-member h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-member p {
+      color: var(--hover-gray);
+      font-weight: 500;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 4rem 2rem;
+      text-align: center;
       background: var(--primary-black);
       color: var(--primary-white);
-      border: 2px solid var(--primary-black);
+    }
+
+    .cta-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-section p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: var(--accent-red);
+      color: var(--primary-white);
+      border: 2px solid var(--accent-red);
       border-radius: 50px;
       font-size: 1.2rem;
       font-weight: 600;
       cursor: pointer;
       transition: all var(--transition-speed) ease;
+      text-decoration: none;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
-    .shop-btn:hover {
-      background: var(--hover-gray);
+    .cta-btn:hover {
+      background: transparent;
+      color: var(--accent-red);
       transform: scale(1.05);
-      box-shadow: var(--shadow-hover);
-    }
-
-    .shop-btn:active {
-      transform: scale(0.98);
     }
 
     /* Footer */
@@ -290,24 +412,26 @@
         gap: 1.5rem;
       }
 
-      .nav-links a, .nav-icons a {
-        font-size: 1rem;
+      .about-hero h1 {
+        font-size: 2.5rem;
       }
 
-      .hero h1 {
-        font-size: 2rem;
-        padding: 0 1rem;
-      }
-
-      .products {
+      .story-section {
         flex-direction: column;
-        align-items: center;
         padding: 3rem 1rem;
+        gap: 2rem;
       }
 
-      .product-card {
-        width: 100%;
-        max-width: 300px;
+      .story-content h2,
+      .values-section h2,
+      .team-section h2,
+      .cta-section h2 {
+        font-size: 2rem;
+      }
+
+      .values-grid,
+      .team-grid {
+        grid-template-columns: 1fr;
       }
 
       .newsletter-form {
@@ -326,17 +450,13 @@
     }
 
     @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.6rem;
+      .about-hero h1 {
+        font-size: 2rem;
       }
 
-      .product-card {
+      .value-card,
+      .team-member {
         padding: 1.5rem;
-      }
-
-      .shop-btn {
-        padding: 0.8rem 2rem;
-        font-size: 1.1rem;
       }
     }
 
@@ -358,11 +478,11 @@
       outline-offset: 2px;
     }
 
-    /* Animation */
-    @keyframes fadeIn {
+    /* Animations */
+    @keyframes fadeInUp {
       from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
       }
       to {
         opacity: 1;
@@ -370,22 +490,12 @@
       }
     }
 
-    .hero, .products, .shop-btn, footer {
-      animation: fadeIn 0.8s ease-out;
+    .about-hero, .story-section, .values-section, .team-section, .cta-section {
+      animation: fadeInUp 0.8s ease-out;
     }
 
-    .product-card {
-      animation: fadeIn 0.8s ease-out backwards;
-    }
-
-    .product-card:nth-child(1) {
-      animation-delay: 0.1s;
-    }
-    .product-card:nth-child(2) {
-      animation-delay: 0.2s;
-    }
-    .product-card:nth-child(3) {
-      animation-delay: 0.3s;
+    .value-card, .team-member {
+      animation: fadeInUp 0.8s ease-out backwards;
     }
   </style>
 </head>
@@ -393,8 +503,8 @@
 
   <nav class="navbar" aria-label="Main navigation">
     <ul class="nav-links">
-      <li><a href="SHOP.html" aria-current="page">SHOP</a></li>
-      <li><a href="ABOUT.HTML">ABOUT</a></li>
+      <li><a href="SHOP.html">SHOP</a></li>
+      <li><a href="ABOUT.HTML" aria-current="page">ABOUT</a></li>
       <li><a href="index.html">HOME</a></li>
     </ul>
     
@@ -412,33 +522,86 @@
   </nav>
 
   <main>
-    <section class="hero" aria-labelledby="hero-heading">
-      <h1 id="hero-heading">
-        Our hot sauce isn’t just hot—it’s delicious. We source killer ingredients 
-        for the most flavor in every squeeze. So whether you’re a seasoned spice 
-        connoisseur, or you fear the Reaper, we’ve got the sauce for you.
-      </h1>
+    <!-- Hero Section -->
+    <section class="about-hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Our Story</h1>
+      <p class="tagline">From a backyard obsession to bringing flavor to tables worldwide</p>
     </section>
 
-    <section class="products" aria-labelledby="products-heading">
-      <h2 id="products-heading" class="sr-only">Our Hot Sauce Collection</h2>
-      <div class="product-card">
-        <img src="asset/src/img/classic.png" alt="Yellowbird Classic Hot Sauce bottle">
-        <h3>CLASSIC</h3>
+    <!-- Our Story Section -->
+    <section class="story-section" aria-labelledby="story-heading">
+      <div class="story-content">
+        <h2 id="story-heading">Born from Passion</h2>
+        <p>Yellowbird began in 2011 with a simple mission: create hot sauce that's about flavor first, heat second. What started as a backyard experiment in Austin, Texas has grown into a beloved brand known for its commitment to quality ingredients and balanced flavor profiles.</p>
+        <p>We believe hot sauce should enhance your food, not overpower it. That's why we source the freshest peppers, fruits, and vegetables, blending them in small batches to ensure every bottle delivers the perfect balance of heat and flavor.</p>
+        <p>Our name comes from the joyful, adventurous spirit we bring to every creation. Like a yellowbird in flight, we're constantly exploring new flavor combinations and pushing the boundaries of what hot sauce can be.</p>
       </div>
-      <div class="product-card">
-        <img src="asset/src/img/orga.png" alt="Yellowbird Organic Hot Sauce bottle">
-        <h3>ORGANIC</h3>
-      </div>
-      <div class="product-card">
-        <img src="asset/src/img/samll.png" alt="Yellowbird Small Batch Hot Sauce bottle">
-        <h3>SMALL BATCH</h3>
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1596040033221-a3822e5c43c1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh peppers being prepared for Yellowbird hot sauce">
       </div>
     </section>
 
-    <button class="shop-btn" aria-label="Shop all hot sauces">
-      SHOP ALL
-    </button>
+    <!-- Values Section -->
+    <section class="values-section" aria-labelledby="values-heading">
+      <h2 id="values-heading">Our Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon" aria-hidden="true">🌶️</div>
+          <h3>Flavor First</h3>
+          <p>Heat should complement, not overwhelm. We craft sauces where every ingredient shines through, creating complex flavor profiles that keep you coming back.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" aria-hidden="true">🌱</div>
+          <h3>Quality Ingredients</h3>
+          <p>We partner with local farmers to source organic, non-GMO peppers and produce. If we wouldn't eat it fresh, it doesn't go in our sauce.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" aria-hidden="true">🧑‍🍳</div>
+          <h3>Small Batch Craft</h3>
+          <p>Every bottle is crafted in small batches to ensure consistency and quality. This hands-on approach allows us to maintain the artisanal quality that defines Yellowbird.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon" aria-hidden="true">🌎</div>
+          <h3>Sustainable Practices</h3>
+          <p>From eco-friendly packaging to supporting sustainable agriculture, we're committed to reducing our environmental footprint at every step.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" aria-labelledby="team-heading">
+      <h2 id="team-heading">Meet the Flock</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Founder and Head Sauce Maker">
+          </div>
+          <h3>Alex Chen</h3>
+          <p>Founder & Head Sauce Maker</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Lead Flavor Developer">
+          </div>
+          <h3>Maya Rodriguez</h3>
+          <p>Lead Flavor Developer</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Operations Manager">
+          </div>
+          <h3>Jamal Wilson</h3>
+          <p>Operations Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to Experience the Flavor?</h2>
+      <p>Join thousands of spice lovers who have made Yellowbird their go-to hot sauce for every meal.</p>
+      <a href="SHOP.html" class="cta-btn">Shop Our Sauces</a>
+    </section>
   </main>
 
   <footer>
@@ -453,11 +616,11 @@
     
     <nav aria-label="Footer navigation">
       <div class="footer-links">
-        <a href="#">SHOP ALL</a>
+        <a href="SHOP.html">SHOP ALL</a>
         <a href="#">CLASSIC</a>
         <a href="#">ORGANIC</a>
         <a href="#">SMALL BATCH</a>
-        <a href="#">ABOUT</a>
+        <a href="ABOUT.HTML">ABOUT</a>
         <a href="#">BLOG</a>
         <a href="#">CONTACT</a>
         <a href="#">INSTAGRAM</a>
@@ -468,6 +631,7 @@
   </footer>
 
   <script>
+    // Add smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -481,17 +645,25 @@
       });
     });
 
+    // Newsletter form submission
     const newsletterForm = document.querySelector('.newsletter-form');
     if (newsletterForm) {
       newsletterForm.addEventListener('submit', function(e) {
         e.preventDefault();
         const email = this.querySelector('input[type="email"]').value;
+        // Here you would typically send the email to your backend
         alert(`Thank you for subscribing with: ${email}`);
         this.reset();
       });
     }
 
-    document.addEventListener('touchstart', function() {}, {passive: true});
+    // Add current year to copyright
+    document.addEventListener('DOMContentLoaded', function() {
+      const yearSpan = document.querySelector('footer p');
+      if (yearSpan) {
+        yearSpan.textContent = yearSpan.textContent.replace('2025', new Date().getFullYear());
+      }
+    });
   </script>
 
 </body>
