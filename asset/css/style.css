@@ -361,7 +361,7 @@ body {
 
 /* --- SHOP BUTTON --- */
 .shop-btn {
-  display: block;
+  display: flex
   margin: 30px auto;
   padding: 12px 25px;
   background: black;
@@ -524,4 +524,8 @@ footer p {
     width: 100%;
     margin-top: 10px;
   }
+}
+
+.shop-btn {
+  color: aqua;
 }
